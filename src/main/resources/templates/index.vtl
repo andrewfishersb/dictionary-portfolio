@@ -1,9 +1,13 @@
 <h1>Your Dictionary: </h1>
 
+#foreach($word in $words)
+  <li><a href="/words/$word.getId()">$word.getWord()</a></li>
+#end
+
 
 
 <form class="form-group" action="/words" method="post">
   <label for="word">Input A Word</label>
-  <input type="text" name="word" class="word">
+  <input type="text" name="word" id="word">
   <button type="submit" class="btn btn-info">Add a New Word</button>
 </form>

@@ -1,5 +1,8 @@
+<h2>$word.getWord()</h2>
 
-<!-- use below for the post loop of words -->
-/*#foreach($word : $words)*/
-  <!-- <li><a href="/$word.getId()">$word</a></li> -->
-/*#end*/
+#foreach($definition in $definitions)
+  <li>$definition.getDefinition()</li>
+#end
+
+<a href="/words/$word.getId()/definition/add">Add a definition</a>
+<a href="/words">Go Back to Words</a>
