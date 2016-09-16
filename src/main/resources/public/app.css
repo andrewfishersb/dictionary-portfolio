@@ -1,20 +1,43 @@
+h1{
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+p{
+  font-size: 100px;
+  padding-right: 15%;
+  text-decoration: underline;
 
 
+}
+
+form{
+  margin-left: 7%;
+}
 
 li{
   list-style: url("images/icon.png");
   font-size: 35px;
+  margin-left: 5%;
+
+}
+
+img{
+  margin-left: 17%;
+  margin-top: 17%;
 }
 
 body{
-  /*background-image: url("images/book.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 10%;*/
   background: url("images/book.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: cursive;
+}
+
+.heading{
+  padding-bottom: 10%;
+  text-align: center;
+  margin-top: 5%;
 }
