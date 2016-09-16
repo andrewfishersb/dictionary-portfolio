@@ -36,9 +36,9 @@ public class App{
     get("/words/:id",(request,response)->{
       Map<String, Object> model = new HashMap<String, Object>();
       Word aWord = Word.find(Integer.parseInt(request.params(":id")));
-      String aDefinition = request.queryParams("definition");
+      Definition.clear();
       model.put("word", aWord);
-      model.put("definitions",Definition.all());
+      model.put("definitions",aWord.getDefinitions());
       model.put("template","templates/definitions.vtl");
       return new ModelAndView(model,layout);
     }, new VelocityTemplateEngine());
