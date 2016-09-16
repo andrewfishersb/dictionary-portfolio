@@ -1,8 +1,32 @@
-<h2>$word.getWord()</h2>
+<div id="book">
+#if ( $word )
+<h1 >$word.getWord()</h1>
 
-#foreach($definition in $definitions)
-  <li>$definition.getDefinition()</li>
+  <ul>
+    #foreach($definition in $definitions)
+      <li>$definition.getDefinition()</li>
+    #end
+  </ul>
+  <a href="/words/$word.getId()/definition/add">Add a definition</a>
+  <a href="/words">Go Back to Words</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#else
+  <h1>Word Could Not Be Found</h1>
+  <img src="/images/500.png" alt="500" />
+
 #end
-
-<a href="/words/$word.getId()/definition/add">Add a definition</a>
-<a href="/words">Go Back to Words</a>
+</div>

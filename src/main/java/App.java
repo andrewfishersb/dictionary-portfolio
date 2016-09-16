@@ -38,7 +38,9 @@ public class App{
       Word aWord = Word.find(Integer.parseInt(request.params(":id")));
       Definition.clear();
       model.put("word", aWord);
-      model.put("definitions",aWord.getDefinitions());
+      if(aWord != null){
+        model.put("definitions",aWord.getDefinitions());
+      }
       model.put("template","templates/definitions.vtl");
       return new ModelAndView(model,layout);
     }, new VelocityTemplateEngine());
@@ -62,7 +64,6 @@ public class App{
       model.put("template","templates/definitions.vtl");
       return new ModelAndView(model,layout);
     }, new VelocityTemplateEngine());
-
 
   }
 }

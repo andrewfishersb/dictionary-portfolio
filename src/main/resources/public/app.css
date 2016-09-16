@@ -1,0 +1,20 @@
+
+
+
+li{
+  list-style: url("images/icon.png");
+  font-size: 35px;
+}
+
+body{
+  /*background-image: url("images/book.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 10%;*/
+  background: url("images/book.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
