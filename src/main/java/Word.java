@@ -44,6 +44,5 @@ public class Word {
     }catch(IndexOutOfBoundsException exception){
       return null;
     }
-
   }
 }

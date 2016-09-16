@@ -1,10 +1,10 @@
 #if ( $word )
 <div class="row heading">
   <div class="col-sm-6">
-      <a href="/words/$word.getId()/definition/add">Add a definition</a>
+    <a href="/words">Go Back to Words</a>
   </div>
   <div class="col-md-6">
-      <a href="/words">Go Back to Words</a>
+    <a href="/words/$word.getId()/definition/add">Add a definition</a>
   </div>
 </div>
 <div class="row">
@@ -19,23 +19,6 @@
     </ul>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #else
   <div class="row">
     <a href="/words">Go Back to Words</a>
@@ -44,6 +27,4 @@
   <div class="row">
       <img src="/images/500.png" alt="500" />
   </div>
-
-
 #end
